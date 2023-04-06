@@ -12,8 +12,6 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes: Routes = [
@@ -43,8 +41,6 @@ const routes: Routes = [
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot(routes),
-    NgbModule,
-    ToastrModule.forRoot(),
     BrowserAnimationsModule
   ],
   providers: [],

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Apollo} from 'apollo-angular';
 import {CREATE_EMPLOYEE} from '../graphql.operations'
 import { Router } from '@angular/router';
-import { ToastrService } from 'ngx-toastr';
+
 
 @Component({
   selector: 'app-add-employee',
@@ -15,7 +15,7 @@ export class AddEmployeeComponent {
   email: string = '';
   gender: string = '';
   salary: string = '';
-  constructor(private apollo: Apollo, private router: Router, private toastr: ToastrService) { }
+  constructor(private apollo: Apollo, private router: Router) { }
   ngOnInit(): void {
     
   }
