@@ -1,0 +1,18 @@
+<div class="container w-50">
+  <h2>Employee Details</h2>
+  <div class="card mb-4">
+    <div class="card-body text-center">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
+        alt="avatar"
+        class="rounded-circle img-fluid"
+        style="width: 150px"
+      />
+      <h5 class="my-3">{{ employee.firstName }} {{ employee.lastName }}</h5>
+      <p class="text-muted mb-1">Email: {{ employee.email }}</p>
+      <p class="text-muted mb-1">Gender: {{ employee.gender }}</p>
+      <p class="text-muted mb-1">Salary: {{ employee.salary }}</p>
+    </div>
+  </div>
+  <a class="btn btn-primary" [routerLink]="['/employees']">Back to home</a>
+</div>

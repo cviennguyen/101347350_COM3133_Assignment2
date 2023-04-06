@@ -1,0 +1,72 @@
+<div class="container w-50">
+  <form
+    class="form-group"
+    (ngSubmit)="updateEmployee(id, firstName, lastName, email, gender, salary)"
+  >
+    <h2>Update Employee</h2>
+    <input type="hidden" [(ngModel)]="id" name="id" />
+    <div class="form-group mb-3">
+      <label for="fname">First Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="fname"
+        [(ngModel)]="firstName"
+        name="firstName"
+        placeholder="Your name.."
+        value="{{ employee?.firstName }}"
+      />
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="lname">Last Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="lname"
+        [(ngModel)]="lastName"
+        name="lastName"
+        placeholder="Your last name.."
+        value="{{ employee?.lastName }}"
+      />
+    </div>
+    <div class="form-group mb-3">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        [(ngModel)]="email"
+        name="email"
+        placeholder="Your email.."
+        value="{{ employee?.email }}"
+      />
+    </div>
+    <div class="form-group mb-3">
+      <label for="gender">gender</label>
+      <select
+        id="gender"
+        class="form-control"
+        value="{{ employee?.gender }}"
+        [(ngModel)]="gender"
+        name="gender"
+      >
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+    </div>
+    <div class="form-group mb-3">
+      <label for="salary">salary</label>
+      <input
+        type="text"
+        class="form-control"
+        id="salary"
+        [(ngModel)]="salary"
+        name="salary"
+        placeholder="Your salary.."
+        value="{{ employee?.salary }}"
+      />
+    </div>
+    <button class="btn btn-primary" type="submit">Update</button>
+  </form>
+</div>

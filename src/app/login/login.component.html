@@ -1,0 +1,27 @@
+<div class="container w-50">
+  <form (ngSubmit)="login(username, password)">
+    <h2>Login</h2>
+    <div class="form-group mb-3">
+      <label for="username">Username</label>
+      <input
+        class="form-control"
+        id="username"
+        name="username"
+        [(ngModel)]="username"
+        type="text"
+      />
+    </div>
+    <div class="form-group mb-3">
+      <label for="password">Password</label>
+      <input
+        class="form-control"
+        [(ngModel)]="password"
+        name="password"
+        id="password"
+        type="password"
+      />
+    </div>
+    <button class="btn btn-primary" type="submit">Login</button>
+    Do not have an account? <a [routerLink]="['/signup']">Signup</a>
+  </form>
+</div>
