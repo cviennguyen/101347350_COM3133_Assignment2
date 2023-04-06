@@ -23,9 +23,11 @@
     "@ng-bootstrap/ng-bootstrap": "^14.1.0",
     "apollo-angular": "^4.2.1",
     "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.4",
     "cors": "^2.8.5",
     "graphql": "^16.0.6",
-
+    "ngx-bootstrap": "^10.2.0",
+    "ngx-toastr": "^16.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
